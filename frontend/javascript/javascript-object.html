@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <!--head start-->
+<meta charset="utf-8">
+
+
+<title>💻Javascript Objects | new Object | Object properties | instanceof object with example</title>
+<link rel="shortcut icon" type="image/x-icon" href="./img/javascript.png">
+<meta name="description" content="💻 Javascript Objects, how to declare objects in javascript. Object literals, objects properties and methods, instanceof objects. for in loop for object ">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="#000">
+<meta name="apple-mobile-web-app-title" content="javascript">
+<meta name="apple-touch-icon" content="./img/javascript.png">
+<meta name="msapplication-TileImage" content="./img/javascript.png">
+<meta name="msapplication-TileColor" content="#f1f1f1">
+<meta name=keywords content="object in javascript , ajax full form , ajax example, ajax in javascript">
+<meta property="og:site_name" content="javascript tutorial">
+<meta property="og:title" content="💻 javascript fetch API tutorial | how to fetch json or api end points in webpage or website⌨️ ">
+<meta property="og:url" content="https://english.ashishtech.com">
+<meta property="og:description" content="💻 Javascript Objects, how to declare objects in javascript. Object literals, objects properties and methods, instanceof objects. for in loop for object ">
+<meta property="og:type" content=Website>
+<meta name="theme-color" content="#000">
+<meta property="og:locale" content="en-US" />
+<meta name='geo.country' content='India'/>
+<meta property="og:image" content="./img/javascript.png">
+
+<meta property="twitter:card" content='./img/javascript.png'>
+
+<meta property="twitter:title" content="Learn 💻Javascript Objects | new Object | Object properties | instanceof object with example">
+<meta property="twitter:description" content="💻 Javascript Objects, how to declare objects in javascript. Object literals, objects properties and methods, instanceof objects. for in loop for object ">
+
+<meta property="twitter:image" content="./img/javascript.png">
+<link href="http://ashishtech.com/frontend/javascript/" rel=canonical>
+<meta name="keywords" content="javascript fetch api tutorial , javascript full screen mode, ajax full form" >
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link href="https://fonts.googleapis.com/css2?family=Vidaloka&display=swap" rel="stylesheet">
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+
+
+<link rel="stylesheet" href="/./css/style.css">
+<link rel="stylesheet" href="./../css/rightdiv.css">
+<link rel="stylesheet" href="./../css/style.css">
+<link rel="stylesheet" href="./../jquery/jquery.css">
+<!--[if lt IE 9]>
+  <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+  <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>  
+<![endif]-->
+
+
+</head>
+<!--head end-->
+<header ng-include="'/./mainnav.html'"></header>
+
+<body data-ng-app>
+ 
+ <div class="wrapper">
+   <div class="left">
+<!--left----------------------------------------------------------->
+<div class="leftnav">
+    <div ng-include="'./sidenav.html'"></div>
+</div>
+<!--left end----------------------------------->
+   </div>
+   <div class="right">
+<div class="rightdiv">
+  <div class="left2">
+
+<h1 class="text-center">Javascript Object</h1>
+<p>Everthing in javascript is either primitive data type, like Strings, Numbers, Boolean , undefined, null, or an Object. Arrays, Functions are also Objects, but they are build-in objects of javascript.
+<br>
+    JavaScript Objects are basicly <i style="color: aquamarine;">collection of Multiple datatypes inside a single variable</i>, same like array, but Arrays use index notation, Objects use key-value pair.
+    <br>
+    Objects can also store multiple data in a single variable.</p>
+
+<section class="sub">
+    <h2>Object Declaration in javasript</h2>
+    <p>Objects in javascript can be declared using curly brackets {}. We can also use new Object() constructor function to declare Objects. Both {} and new Objects() works same. 
+        <b class="text-success">new Object()</b> is constructor form, and curly brackets {} is literal form of JS Objects.</p>
+
+
+<h3>JavaScript Object Literal</h3>
+
+<pre class="code">
+    var month={};            // blank Object
+</pre>
+
+
+
+<h3>JavaScript Object Constructor</h3>
+<pre class="code">
+    var month=new Object();        // blank Object
+</pre>
+
+
+<h2>checking Object datatype  using instanceof</h2>
+
+<p style="color: aquamarine;">Objects are Reference data types. typeof operator will return "object" for Array and Objects. To check datatype of an object, use instanceof(Object) function.
+     instanceof(Object) function will determine whether the passed value is an Object or not.</p>
+     <h3>example</h3>
+<pre class="code">
+    
+var x={};        
+typeof x;                // return "object"
+x instanceof(Object);    // return true 
+</pre>
+
+
+<div class="alert alert-info">
+    <ol style="list-style-type: decimal;font-weight: 600;">
+        <li>instanceof of both Arrays and Objects is Object.
+          </li>
+          <li>  For Arrays, use Array.isArray().</li>
+    </ol>
+</div>
+
+<hr>
+<h2>Travresing values of Object</h2>
+<p style="color: blueviolet;">To check element inside Object, we can call object.property or object followed by property in brackets. To find first element, call array[0]. This index notation starts from 0 to array.length-1.
+
+</p>
+
+
+<pre class="code">
+    var user={
+        "full-name":"Mr John",
+        profile:"full stack Developer",
+        location:"Mirzapur, Utter Pradesh", 
+        pincode:221306,    
+    };
+       
+        user["full-name"];  // return Mr John
+        user.profile;         // return "full stack Developer"
+        user.location;        // return "Mirzapur , Utter Pradesh"
+        user.pincode;         // return 221306 
+          
+          or
+          
+        user["full-name"];     // return "Mr John"  
+        user["profile"];  // return "full stack Developer"  
+        
+</pre>
+
+<h2>hasOwnProperty</h2>
+<p>The <i style="color: rgb(255, 72, 0);">'hasOwnProperty'</i> property check whether the property is his 
+    own property or global property of all JS Objects. It returns boolean value,
+     true or false.
+     in operator returns true for all properties,
+      including global. See example</p>
+<pre class="code">
+    var user={
+        "full-name":"avinash malhotra",
+        profile:"UI Developer",
+        location:"Noida, Delhi NCR", 
+        pincode:201301,    
+        };
+        
+user.hasOwnProperty("pincode");   // returns true  
+user.hasOwnProperty("profile");   // returns true  
+user.hasOwnProperty("toString");   // returns false 
+</pre>
+
+
+
+<h2>How to add and remove property in objects</h2>
+<p>An JS Object can add and remove properties in object. Even if object is already declared,
+still we can add and properties in object</p>
+<hr>
+<h3>Adding Property in Object</h3>
+<p>You can add propertes to object by <b class="cmd">object.property=value</b></p>
+<p><b style="color: aquamarine;">Example</b></p>
+<pre class="code">
+    var user={
+        "full-name":"avinash malhotra",
+        profile:"UI Developer",
+        location:"Noida, Delhi NCR", 
+        pincode:201301,    
+        };
+        
+user.country="India"; 
+</pre>
+
+<h3>Removing Property From Object</h3>
+<p>You can remove any propery of object by following method -<br>
+<b style="margin: 10px;display: inline-block;" class="cmd">delete object['property']</b></p>
+<pre class="code">
+    var user={
+        "full-name":"Mr John",
+        profile:"Full stack Developer",
+        location:"Mirzapur , Utter pradesh", 
+        pincode:221306,    
+        };
+
+delete user["full-name"]; 
+</pre>
+
+<h2>How to Change Property value in Object</h2>
+<pre class="code">
+    var user={
+        "full-name":"Mr John",
+        profile:"full stack developer Developer",
+        location:"Mirzapur, Utter Pradesh", 
+        pincode:221306,    
+        };
+
+user.pincode=110022;
+</pre>
+<hr>
+<h2>How Get All properties of Object</h2>
+<pre class="code">
+full-name - avinash malhotra
+profile - UI Developer
+location - Noida, Delhi NCR
+pincode - 201301
+</pre>
+
+
+<pre class="code">
+    var user={
+        "full-name":"Mr John",
+        profile:"full stack Developer",
+        location:"Mirzapur ,Utter Pradesh", 
+        pincode:221306,    
+        };
+for( var i in user){
+console.log(i + " - " + user[i]);
+}     
+</pre>
+
+
+
+
+
+
+
+
+
+
+
+    </section>
+
+</div>
+  <div class="right2" ng-include="'/./english/right2.html'">
+  </div>
+  <div class="clear"></div>
+</div>
+  
+   </div>
+ 
+   <div class="clear"></div>
+ </div>
+
+
+
+</body>
+<!--footer-->
+<footer>
+    <div ng-include="'../../footer.html'"></div>
+    
+    </footer>
+
+
+</html>

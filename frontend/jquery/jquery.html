@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <!--head start-->
+<meta charset="utf-8">
+<title>jquery tutorial 🧑🏻‍💻</title>
+<meta name="description" content="jquery tutorial 🧑🏻‍💻 , Learn jquery from basic to standard level.Jquery is fast library of JavaScript">
+<meta name="keywords" content="css text shadow , text shadow property" >
+<link rel="shortcut icon" type="image/x-icon" href="./img/jquery.png">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="#000">
+<meta name="apple-mobile-web-app-title" content="jquery">
+<meta name="apple-touch-icon" content="./img/jquery.png">
+<meta name="msapplication-TileImage" content="./img/jquery.png">
+<meta name="msapplication-TileColor" content="#f1f1f1">
+
+<meta property="og:site_name" content="ashishtech jquery tutorial">
+<meta property="og:title" content="jquery tutorial">
+<meta property="og:url" content="http://ashishtech.com/frontend/jquery/jquery.html">
+<meta property="og:description"
+  content="jquery tutorial 🧑🏻‍💻 , Learn jquery from basic to standard level.Jquery is fast library of JavaScript">
+<meta property="og:type" content=Website>
+<meta name="theme-color" content="#000">
+<meta property="og:locale" content="en-US"/>
+<meta name='geo.country' content='India' />
+<meta property="og:image" content="./img/jquery.png">
+
+<meta property="twitter:card" content='./img/jquery.png'>
+
+<meta property="twitter:title" content="jquery tutorial - ashishtech">
+<meta property="twitter:description"
+  content="jquery tutorial 🧑🏻‍💻 , Learn jquery from basic to standard level.Jquery is fast library of JavaScript">
+
+<meta property="twitter:image" content="./img/jquery.png">
+<link href="http://ashishtech.com/frontend/jquery" rel=canonical>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link href="https://fonts.googleapis.com/css2?family=Vidaloka&display=swap" rel="stylesheet">
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+
+
+<link rel="stylesheet" href="/./css/style.css">
+<link rel="stylesheet" href="./../css/rightdiv.css">
+<link rel="stylesheet" href="./../css/style.css">
+<link rel="stylesheet" href="./jquery.css">
+
+
+
+</head>
+<!--head end-->
+<header ng-include="'/./mainnav.html'"></header>
+
+<body data-ng-app>
+ 
+ 
+ <div class="wrapper">
+   <div class="left">
+<!--left----------------------------------------------------------->
+<div class="leftnav">
+    <div ng-include="'./sidenav.html'"></div>
+</div>
+<!--left end----------------------------------->
+   </div>
+   <div class="right">
+<div class="rightdiv">
+  <div class="left2">
+
+<h1 class="text-center">jquery function</h1>
+
+<p>jQuery is a fast and concise JavaScript library created by John Resig in 2006. jQuery simplifies HTML document traversing, event handling, animating, and Ajax interactions for Rapid Web Development.</p>
+<p class="text-success">Write less , do more<br>
+    jQuery simplifies HTML document traversing, event handling, animating, and Ajax interactions for rapid web development.</p>
+
+
+<h2 class="subheading1">Prerequisites -</h2>
+<ol>
+    <li>HTML</li>
+    <li>CSS</li>
+    <li>Javascript</li>
+    <li>Document Object Model (DOM)</li>
+</ol>
+<p class="text-secondary"><span><i class="fa fa-hand-o-right"></i></span> we are going to develop web based application using jQuery, it will be good if you have understanding on how internet and web based applications work.</p>
+
+<p>important core features supported by jQuery -</p>
+<ol>
+    <li>
+        <b>DOM manipulation −</b><br>
+        <p>The jQuery made it easy to select DOM elements, negotiate them and modifying their 
+            content by using cross-browser open source selector engine called Sizzle.</p>
+    </li>
+
+    <li>
+        <b>AJAX Support −</b><br>
+        <p>The jQuery helps you a lot to develop a responsive and featurerich site using AJAX technology.</p>
+    </li>
+
+    <li>
+        <b>Cross Browser Support −</b><br>
+        <p>The jQuery has cross-browser support, and works well in IE 6.0+, FF 2.0+, Safari 3.0+, Chrome and Opera 9.0+</p>
+    </li>
+
+    <li>
+        <b>Animations −</b><br>
+        <p>The jQuery comes with plenty of built-in animation effects which you can use in your websites.</p>
+    </li>
+
+    <li>
+        <b>Event handling −</b><br>
+        <p>The jQuery offers an elegant way to capture a wide variety of events, such as a user clicking on a link, without the need to clutter the HTML code itself with event handlers.</p>
+    </li>
+
+    <li>
+        <b>Lightweight −</b><br>
+        <p>The jQuery is very lightweight library - about 19KB in size (Minified and gzipped).</p>
+    </li>
+
+</ol>
+
+<h2 class="subheading1">How to use jQuery in html ?</h2>
+<p>There are two ways to use jQuery in your html.</p>
+
+<ol>
+   <li><b>Local</b><br>
+    <p>You can download jquery and link it inyour html head .</p>
+   </li> 
+
+   <li><b>CDN</b><br>
+    <p>You can use live CDN (content delivery network) in your head in html ,  here you have no need to download it. <b class="text-imp">It is preffered method to use jquery </b></p>
+   </li> 
+</ol>
+
+
+<h2 class="subheading1">How to use localy</h2>
+<p>Download latest version of jquery  <a class="text-primary" target="_BLANK" href="https://code.jquery.com/jquery-3.5.1.min.js"><span><i class="fa fa-link"></i></span>https://code.jquery.com/jquery-3.5.1.min.js</a> <br>
+copy this code and saved in a file with<b class="text-success"> .js</b> extension like <b class="text-info">jquery.js</b>.</p>
+<p class="bg-success text-white">you can include jquery library in your HTML file as follows −</p>
+<pre class="code">
+    <span      >&lt;html&gt;</span><span   >
+    </span><span      >&lt;head&gt;</span><span   >
+       </span><span      >&lt;title&gt;</span><span   >The jQuery Example</span><span      >&lt;/title&gt;</span><span   >
+       </span><span      >&lt;script</span><span   > </span><span     >type</span><span   > </span><span   >=</span><span   > </span><span   >"/jquery/jquery-2.1.3.min.js"</span><span      >&gt;</span><span   >
+       </span><span      >&lt;/script&gt;</span><span   >
+         
+       </span><span      >&lt;script</span><span   > </span><span     >type</span><span   > </span><span   >=</span><span   > </span><span    >"text/javascript"</span><span      >&gt;</span><span   >
+          $</span><span   >(</span><span   >document</span><span   >).</span><span   >ready</span><span   >(</span><span >function</span><span   >()</span><span   > </span><span   >{</span><span   >
+             document</span><span   >.</span><span   >write</span><span   >(</span><span >"Hello, World!"</span><span   >);</span><span   >
+          </span><span   >});</span><span   >
+       </span><span      >&lt;/script&gt;</span><span   >
+    </span><span      >&lt;/head&gt;</span><span   >
+     
+    </span><span      >&lt;body&gt;</span><span   >
+       </span><span      >&lt;h1&gt;</span><span   >Hello</span><span      >&lt;/h1&gt;</span><span   >
+    </span><span      >&lt;/body&gt;</span><span   >
+ </span><span      >&lt;/html&gt;</span>
+</pre>
+
+
+
+<p>This will produce following result −</p>
+<pre class="code">
+    Hello, World!
+</pre>
+
+<h2 class="subheading1">CDN method</h2>
+<p>There are many cdn you can use any one</p>
+<ol>
+    <li><a href="https://docs.microsoft.com/en-us/aspnet/ajax/cdn/overview#jQuery_Releases_on_the_CDN_0">Microsoft CDN</a></li>
+    <li><a href="https://cdnjs.com/libraries/jquery/">CDNJS CDN</a></li>
+    <li><a href="https://www.jsdelivr.com/package/npm/jquery">jsDelivr CDN</a></li>
+    <li><a href="https://developers.google.com/speed/libraries#jquery">Google CDN</a></li>
+    
+</ol>
+<p>You can include jQuery library into your HTML code directly from Content Delivery Network (CDN). Google and Microsoft provides content deliver for the latest version.</p>
+<p class="text-success">We are using Google CDN version of the library throughout this tutorial.</p>
+
+<h3 class="subheading2">Example</h3>
+
+<pre class="code">
+    <span      >&lt;html&gt;</span><span     >
+    </span><span      >&lt;head&gt;</span><span     >
+       </span><span      >&lt;title&gt;</span><span     >The jQuery Example</span><span      >&lt;/title&gt;</span><span     >
+       </span><span      >&lt;script</span><span     > </span><span  >type</span><span     > </span><span    >=</span><span     > </span><span class="atv" style="color: #008800;">"text/javascript"</span><span     > 
+          </span><span  >src</span><span     > </span><span    >=</span><span     > </span><span class="atv" style="color: #008800;">"https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"</span><span      >&gt;</span><span     >
+       </span><span      >&lt;/script&gt;</span><span     >
+         
+       </span><span      >&lt;script</span><span     > </span><span  >type</span><span     > </span><span    >=</span><span     > </span><span class="atv" style="color: #008800;">"text/javascript"</span><span      >&gt;</span><span     >
+          $</span><span    >(</span><span     >document</span><span    >).</span><span     >ready</span><span    >(</span><span class="kwd" style="color: #000088;">function</span><span    >()</span><span     > </span><span    >{</span><span     >
+             document</span><span    >.</span><span     >write</span><span    >(</span><span   >"Hello, World!"</span><span    >);</span><span     >
+          </span><span    >});</span><span     >
+       </span><span      >&lt;/script&gt;</span><span     >
+    </span><span      >&lt;/head&gt;</span><span     >
+     
+    </span><span      >&lt;body&gt;</span><span     >
+       </span><span      >&lt;h1&gt;</span><span     >Hello</span><span      >&lt;/h1&gt;</span><span     >
+    </span><span      >&lt;/body&gt;</span><span     >
+ </span><span      >&lt;/html&gt;</span>
+</pre>
+<p>This will produce following result −</p>
+<pre class="code">
+    Hello, World!
+</pre>
+
+
+  </div>
+  <div class="right2" ng-include="'/./english/right2.html'">
+  </div>
+  <div class="clear"></div>
+</div>
+  <footer>
+  <div ng-include="'../../footer.html'"></div>
+  
+  </footer>
+   </div>
+ 
+   <div class="clear"></div>
+ </div>
+
+
+
+
+</body>
+<!--footer-->
+
+
+
+</html>

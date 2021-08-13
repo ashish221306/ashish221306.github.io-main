@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <!--head start-->
+<meta charset="utf-8">
+<title>💻 CSS color |RGB COLOR| RGBA COLOR | HSL COLOR </title>
+<meta name="description" content="css color , rgba color, rgb color, hsla color, standard color">
+<meta name="keywords" content="">
+<link rel="shortcut icon" type="image/x-icon" href="./img/css.png">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="#000">
+<meta name="apple-mobile-web-app-title" content="css">
+<meta name="apple-touch-icon" content="./img/css.png">
+<meta name="msapplication-TileImage" content="./img/css.png">
+<meta name="msapplication-TileColor" content="#f1f1f1">
+
+<meta property="og:site_name" content="ashishtech css tutorial">
+<meta property="og:title" content="💻 CSS color |RGB COLOR| RGBA COLOR | HSL COLOR">
+<meta property="og:url" content="http://ashishtech.com/frontend/css/css-color.html">
+<meta property="og:description"
+  content="css color , rgba color, rgb color, hsla color, standard color">
+<meta property="og:type" content=Website>
+<meta name="theme-color" content="#000">
+<meta property="og:locale" content="en-US"/>
+<meta name='geo.country' content='India' />
+<meta property="og:image" content="./img/css.png">
+
+<meta property="twitter:card" content='./img/css.png'>
+
+<meta property="twitter:title" content="💻 CSS color |RGB COLOR| RGBA COLOR | HSL COLOR">
+<meta property="twitter:description"
+  content="css color , rgba color, rgb color, hsla color, standard color">
+
+<meta property="twitter:image" content="./img/css.png">
+<link href="http://ashishtech.com/frontend/css" rel=canonical>
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link href="https://fonts.googleapis.com/css2?family=Vidaloka&display=swap" rel="stylesheet">
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+
+
+<link rel="stylesheet" href="/./css/style.css">
+<link rel="stylesheet" href="./../css/rightdiv.css">
+<link rel="stylesheet" href="./../css/style.css">
+<link rel="stylesheet" href="./../jquery/jquery.css">
+<!--[if lt IE 9]>
+  <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+  <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>  
+<![endif]-->
+<style>
+    #red, #green, #blue {
+      float: left;
+      clear: left;
+      width: 300px;
+      margin: 15px;
+    }
+    #swatch {
+      width: 120px;
+      height: 100px;
+      margin-top: 18px;
+      margin-left: 25%;
+      background-image: none;
+    }
+    #red .ui-slider-range { background: #ef2929; }
+    #red .ui-slider-handle { border-color: #ef2929; }
+    #green .ui-slider-range { background: #8ae234; }
+    #green .ui-slider-handle { border-color: #8ae234; }
+    #blue .ui-slider-range { background: #729fcf; }
+    #blue .ui-slider-handle { border-color: #729fcf; }
+  .btn-lg{
+        margin: 2px;
+      width: 128px;
+      color: white;
+      text-shadow: 0px 0px 4px #000;
+  }      
+    </style>
+</head>
+<!--head end-->
+<header ng-include="'/./mainnav.html'"></header>
+
+<body data-ng-app>
+ 
+ 
+ <div class="wrapper">
+   <div class="left">
+<!--left----------------------------------------------------------->
+<div class="leftnav">
+    <div ng-include="'./sidenav.html'"></div>
+</div>
+<!--left end----------------------------------->
+   </div>
+   <div class="right">
+<div class="rightdiv">
+  <div class="left2">
+
+<h1 class="text-center">CSS Color</h1>
+<p>CSS Colors are used in fonts color and background colors. Font color can be changed by using css <b class="text-imp">"color"</b> Property, background color is changed using <b class="text-imp">"background-color" </b>
+    property and border color is changed using <b class="text-imp">"border-color"</b> property.</p>
+
+<p class="text-pink">CSS Supports RGB Colors and HSL Colors. RGB and HSL are basically Screen Colors. 
+    However for printing purpose, we use CMYK (not allowed in css).</p>
+
+
+
+<ol class="list">
+    <li><span><i class="fa fa-hand-o-right"></i></span><a href="#color-name">Color Name</a></li>
+    <li><span><i class="fa fa-hand-o-right"></i></span><a href="#rgb-color">RGB colors</a></li>
+    <li><span><i class="fa fa-hand-o-right"></i></span><a href="#hexadecimal-color">Hexadecimal Color Code</a></li>
+    
+</ol>
+
+<h2 id="color-name" class="text-aqua">CSS Color Names</h2>
+<p>CSS include <b class="text-imp">total 16,777,216 ( 1 Crore 67 Lakhs )</b> or <b class="text-imp">16 Million colours.</b>
+    However 17 colors are known by their name. These popular colors are
+    
+    </p>
+<div class="output">
+    <button style="background: aqua;color: #000;" class="type">aqua</button>
+    <button style="background: black;color: #f1f1f1;" class="type">black</button>
+    <button style="background: blue" class="type">blue</button>
+    <button style="background: fuchsia" class="type">fuchsia</button>
+    <button style="background: gray" class="type">gray</button>
+    <button style="background: green" class="type">green</button>
+    <button style="background: maroon" class="type">maroon</button>
+    <button style="background: navy" class="type">navy</button>
+    <button style="background: olive" class="type">olive</button>
+    <button style="background: orange" class="type">orange</button>
+    <button style="background: purple" class="type">purple</button>
+    <button style="background: red" class="type">red</button>
+    <button style="background: silver" class="type">silver</button>
+    <button style="background: silver" class="type">teal</button>
+    <button style="background: #f1f1f1;color: #000;" class="type">white</button>
+    <button style="background: yellow;color: #000;" class="type">yellow</button>
+    <button style="background: transparent" class="type">transparent</button>
+   
+</div>
+
+
+
+<h2 style="color: aquamarine;">RGB Colors</h2>
+<p>RGB color is made by combination of <b style="color: red;">RED</b>, <b style="color: green;">GREEN</b> and <b style="color: blue;">BLUE</b> colors.</p>
+
+<ol>
+    <li><b style="color: red;">RED</b> 0-120 or 0-100%</li>
+    <li><b style="color: rgb(76, 209, 14);">GREEN</b> 0-120 or 0-100%</li>
+    <li><b style="color: rgb(0, 4, 255);">BLUE</b> 0-120 or 0-100%</li>
+</ol>
+<p><b class="text-yellow">16 million</b> colors can be used. But in 0%-100%, 1 million colors can be used.</p>
+
+<table class="table table-bordered">
+    <thead>
+        <td>Color</td>
+        <td>Code</td>
+    </thead>
+    <tbody>
+        <tr>
+            <td><b style="color: red;">RED</b></td>
+            <td><b style="color: RGB(255,0,0);">RGB(255,0,0)</b></td>
+        </tr>
+
+        <tr>
+            <td><b style="color: green;">GREEN</b></td>
+            <td><b style="color: RGB(0,255,0);">RGB(0,255,0)</b></td>
+        </tr>
+
+        <tr>
+            <td><b style="color: blue;">BLUE</b></td>
+            
+                <td><b style="color: RGB(0,0,255);">RGB(0,0,255)</b></td>
+            
+        </tr>
+        <tr>
+            <td>BLACK</td>
+            <td><b style="color:rgb(66, 65, 62);">RGB(0,0,0)</b></td>
+        </tr>
+
+        <tr>
+            <td>WHITE</td>
+            <td><b style="color: #f1f1f1;">RGB(255,255,255)</b></b>
+        </tr>
+
+        <tr>
+            <td><b style="color: cyan;">CYAN</b></td>
+            <td><b style="color: cyan;">RGB(0,255,255)</b></td>
+        </tr>
+
+        <tr>
+            <td><b>MAGENTA</b></td>
+            <td><b style="color: magenta;">RGB(RGB(255,0,255))</b></td>
+        </tr>
+
+        <tr>
+            <td><b style="color: yellow;">YELLOW</b></td>
+            <td><b style="color: yellow;">RGB(RGB(255,255,0))</b></td>
+        </tr>
+    </tbody>
+</table>
+
+<h2 class="subheading1">Hexadecimal Color Code</h2>
+
+<p>Hexadecimals colors are basically rgb colors is short form. RGB Colors took 12-16 characters,
+     but Hexadecimals colors takes just 3 or 6 characters followed by #.</p>
+
+
+<p>Hexadecimal number system is <b style="color: rgb(222, 236, 20);">16 base number system</b> where we use 16 different values and mix them to write a color code.
+<br>
+<br>
+<hr>
+In Hexadecimal color coding, we use:<br>
+
+<b style="color: rgb(123, 247, 8);">0,1,2,3,4,5,6,7,8,9,a,b,c,d,e,f.</b><br>
+Minimum value is 0, and maximum is f.
+</p>
+<h3 style="color: rgb(243, 16, 205);">Color code in Hexadecimal</h3>
+<p style="font-size: 30px;font-weight: 600;letter-spacing: 1px;">#<span style="color: red;">RR</span><span style="color: green;">GG</span><span style="color: blue;">BB</span> or #<span style="color: red;">R</span><span style="color: green;">G</span><span style="color: blue;">B</span></p>
+
+<h2 class="subheading1">rgba( ) color</h2>
+<p>
+  <strong class="text-imp">rgba (red, green, blue, alpha) </strong><br>
+  RGBA color is an extension of RGB color values with an alpha 
+  - which specifies the opacity for a color.
+</p>
+<div class="concolor">
+  <div class="rgba_color first" style="background: rgba(226, 128, 128, 0.6);">rgba(255, 0, 0, 0.2)</div>
+<div class="rgba_color second" style="background: rgba(219, 91, 91, 0.7);">rgba(255, 0, 0, 0.4)</div>
+<div class="rgba_color third" style="background: rgba(241, 59, 59, 0.8);">rgba(255, 0, 0, 0.6)</div>
+<div class="rgba_color fourth" style="background: rgba(235, 20, 20, 0.9);">rgba(255, 0, 0, 0.8)</div>
+</div>
+<h3 class="subheading2">Example</h3>
+<p>
+  #p1 {background-color: rgba(255, 0, 0, 0.3);}  /* red with opacity */ <br>
+#p2 {background-color: rgba(0, 255, 0, 0.3);}  /* green with opacity */ <br>
+#p3 {background-color: rgba(0, 0, 255, 0.3);}  /* blue with opacity */  <br>
+</p>
+
+<h2 class="subheading1">HSL Colors</h2>
+<p>HSL stands for Hue, Saturation and Lightness. <br>
+
+
+<ol>
+  <li>Hue is a degree on the color wheel <b class="text-imp">(from 0 to 360)</b> <br>
+  
+  <ol class="circle">
+   <li>0 (or 360) is red</li> 
+   <li>120 is green</li>
+    <li>240 is blue</li>
+  </ol>
+  </li>
+  <li>Saturation is a percentage value: 100% is the full color.</li>
+  <li>
+    Lightness is also a percentage; 0% is dark (black) and 100% is white.
+  </li>
+</ol>
+
+
+
+</p>
+<h2 class="subheading2">Example</h2>
+
+<div class="rgba_color" style="background:  hsla(120, 100%, 50%, 0.3);">hsla(0, 100%, 30%, 0.3);</div>
+<div class="rgba_color"style="background:  hsla(120, 100%, 75%, 0.3)"> hsla(120, 100%, 75%, 0.3)</div>
+<div class="rgba_color"style="background:  hsla(120, 100%, 25%, 0.3);"> hsla(120, 100%, 25%, 0.3)</div>
+<div class="rgba_color"style="background:  hsla(120, 60%, 70%, 0.3);">hsla(0, 100%, 90%, 0.3)</div>
+
+<p>
+  #p1 {background-color: hsla(120, 100%, 50%, 0.3);}  /* green with opacity */ <br>
+#p2 {background-color: hsla(120, 100%, 75%, 0.3);}  /* light green with opacity */ <br>
+#p3 {background-color: hsla(120, 100%, 25%, 0.3);}  /* dark green with opacity */ <br>
+#p4 {background-color: hsla(120, 60%, 70%, 0.3);}   /* pastel green with opacity */
+</p>
+
+
+
+
+
+
+
+
+
+
+
+<a class="custom-button" href="./rgb-to-hex.html" target="_BLANK">CSS Color Picker</a>
+
+
+    </div>
+  <div class="right2" ng-include="'/./english/right2.html'">
+  </div>
+  <div class="clear"></div>
+</div>
+  <footer>
+  <div ng-include="'../../footer.html'"></div>
+  
+  </footer>
+   </div>
+ 
+   <div class="clear"></div>
+ </div>
+
+<div class="sbuttons">
+<a href="https://api.whatsapp.com/send?phone=917068513356&text=&source=&data=" target="_blank" class="sbutton whatsapp" tooltip="WhatsApp"><i class="fa fa-whatsapp"></i></a>  
+<a href="mailto:ashishbhu221306@gmail.com" target="_blank" class="sbutton gplus" tooltip="Email"><i class="fa fa-envelope"></i></a>
+<a href="tel:+917068513356" target="_blank" class="sbutton whatsapp" tooltip="Call"><i class="fa fa-phone"></i></a>
+<a target="_blank" class="sbutton mainsbutton" tooltip="Connect With Us"><i class="fa fa-comment"></i></a> 
+</div>  
+
+
+</body>
+<!--footer-->
+
+
+
+</html>

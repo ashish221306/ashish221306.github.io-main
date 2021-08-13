@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <!--head start-->
+<meta charset="utf-8">
+<title>Angular Bootstrap integration | how to use bootstrap in angular</title>
+<meta name="description" content="How to integrate bootstrap in angular | how to use bootstrap in angular">
+<link rel="shortcut icon" type="image/x-icon" href="./img/angular.png">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="#000">
+<meta name="apple-mobile-web-app-title" content="angular">
+<meta name="apple-touch-icon" content="./img/angular.png">
+<meta name="msapplication-TileImage" content="./img/angular.png">
+<meta name="msapplication-TileColor" content="#f1f1f1">
+<meta property="og:site_name" content="Angular 9 complete tutorial 🧑🏻‍💻">
+<meta property="og:title" content="Angular Bootstrap integration | how to use bootstrap in angular">
+<meta property="og:url" content="http://ashishtech.com/frontend/angular/angular-bootstrap.html">
+<meta property="og:description"
+  content="angular 9 complete tutorial , learn angular most famous frameworks of javascript by google">
+<meta property="og:type" content=Website>
+<meta name="theme-color" content="#000">
+<meta property="og:locale" content="en-US"/>
+<meta name='geo.country' content='India' />
+<meta property="og:image" content="./img/angular.png">
+<meta property="twitter:card" content='./img/angular.png'>
+<meta property="twitter:title" content="Angular Bootstrap integration | how to use bootstrap in angular">
+<meta property="twitter:description"
+  content="angular 9 complete tutorial , learn angular most famous frameworks of javascript by google">
+<meta property="twitter:image" content="./img/angular.png">
+<link href="http://ashishtech.com/frontend/angular" rel=canonical>
+
+
+<meta name="keywords" content="angular bootstrap, angular 7, how to use bootstrap in angular, angular bootstrap integration">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link href="https://fonts.googleapis.com/css2?family=Vidaloka&display=swap" rel="stylesheet">
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+
+
+<link rel="stylesheet" href="/./css/style.css">
+<link rel="stylesheet" href="./../css/rightdiv.css">
+<link rel="stylesheet" href="./../css/style.css">
+<link rel="stylesheet" href="./../jquery/jquery.css">
+<link rel="stylesheet" href='angular.css'>
+</head>
+<!--head end-->
+<header ng-include="'../../mainnav.html'"></header>
+<body data-ng-app>
+ 
+ 
+ <div class="wrapper">
+   <div class="left">
+<!--left----------------------------------------------------------->
+<div class="leftnav" ng-include="'sidenav.html'">
+  
+</div>
+<!--left end----------------------------------->
+   </div>
+   <div class="right">
+<div class="rightdiv">
+  <div class="left2">
+      <!--main content------------------------------------->
+ <h1 class="text-center text-danger font-weight-bold">Angular Bootstrap Integration </h1>
+ <p>How to install Bootstrap for Angular project? <br>
+  Run the following command on command prompt: <br><br>
+  <b class="cmd">
+    npm install --save bootstrap@3  => The @3  is important!
+  </b>
+  <img src="./image/angular7-with-bootstrap.png">
+  Further, when you use a project created with Angular CLI 6+ (check via ng v ), you'll have an angular.json file instead of an .angular-cli.json file. In that file, you still need to add Bootstrap to the styles[] array, but the path should be node_modules/bootstrap/dist/css/bootstrap.min.css , NOT ../node_modules/bootstrap/dist/css/bootstrap.min.css . The leading ../ must not be included.
+
+</p>
+<h2 class="subheading1">How to add bootstrap.css file in the project?</h2>
+<p>Expand Node Module (library root folder)
+<img src="./image/ang-boot-2.png">
+Go to bootstrap folder and expand it.
+<img src="./image/boot3.png">
+Go to dist folder and expand dist.
+<img src="./image/boot4.png">
+Expand css and you will find "bootstrap.css". Expand bootstrap.css and you will see bootstrap.min.css
+<img src="./image/boot5.png">
+Open angular.json file and add the bootstrap.min.css in style section. <br>
+<pre class="code">
+  "styles": [  
+  "node_modules/bootstrap/dist/css/bootstrap.min.css",  
+  "src/styles.css"  
+], 
+</pre>
+Bootstrap is now installed for your Angular 7 project. You can use it now. </p>
+ <div class="alllink" ng-include="'./all-link.html'"></div>
+<!--main end-------------------------------------------------------------------->
+ 
+  </div>
+  <div class="right2">
+     
+    
+  </div>
+  <div class="clear"></div>
+</div>
+  <footer>
+      <a href="../../css/style.css"></a>
+  <div ng-include="'../../footer.html'"></div>
+  </footer>
+   </div>
+ 
+   <div class="clear"></div>
+ </div>
+
+<div class="sbuttons">
+<a href="https://api.whatsapp.com/send?phone=917068513356&text=&source=&data=" target="_blank" class="sbutton whatsapp" tooltip="WhatsApp"><i class="fa fa-whatsapp"></i></a>  
+<a href="mailto:ashishbhu221306@gmail.com" target="_blank" class="sbutton gplus" tooltip="Email"><i class="fa fa-envelope"></i></a>
+<a href="tel:+917068513356" target="_blank" class="sbutton whatsapp" tooltip="Call"><i class="fa fa-phone"></i></a>
+<a target="_blank" class="sbutton mainsbutton" tooltip="Connect With Us"><i class="fa fa-comment"></i></a> 
+</div>  
+
+ 
+</body>
+<!--footer-->
+
+
+
+</html>

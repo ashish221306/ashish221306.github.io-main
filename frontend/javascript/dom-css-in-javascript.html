@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <!--head start-->
+<meta charset="utf-8">
+<title>Javascript DOM css</title>
+<meta name="description" content="hoe to apply css on dom in javascript">
+<meta name="keywords" content="javascript tutorial" >
+
+
+
+
+
+
+
+
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link href="https://fonts.googleapis.com/css2?family=Vidaloka&display=swap" rel="stylesheet">
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+
+
+<link rel="stylesheet" href="/./css/style.css">
+<link rel="stylesheet" href="./../css/rightdiv.css">
+<link rel="stylesheet" href="./../css/style.css">
+<link rel="stylesheet" href="./../jquery/jquery.css">
+<!--[if lt IE 9]>
+  <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+  <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>  
+<![endif]-->
+
+
+</head>
+<!--head end-->
+<header ng-include="'/./mainnav.html'"></header>
+
+<body data-ng-app>
+ 
+ <div class="wrapper">
+   <div class="left">
+<!--left----------------------------------------------------------->
+<div class="leftnav">
+    <div ng-include="'./sidenav.html'"></div>
+</div>
+<!--left end----------------------------------->
+   </div>
+   <div class="right">
+<div class="rightdiv">
+  <div class="left2">
+<h1 class="text-center">DOM CSS in javascript</h1>
+<p>Dom css is used to apply css styles on element dynamicaly .
+    <br>For example , we want that on click of button button color should change from red to green , we can do this by javascript dom css. 
+</p>
+
+<div class="output">
+<button id="rtog" style="padding: 15px 25px; background: red;">click to change me into green </button>
+<script>
+    document.querySelector('#rtog').addEventListener('click',function(){
+        document.querySelector('#rtog').style.background="green"
+    })
+</script>
+
+
+</div>
+<hr>
+
+<h2>javascript style</h2>
+<p>Javascript style property is used to set css to html elements. This is applicable to DOM Elements only. After document element, style property is used. All the css properties are used in camel casing, for exp fontSize. See example</p>
+<div class="sub">
+    <h2>Changing html style by javascript</h2>
+<p>use the following syntax to apply css by javascript</p>
+<p class="code text-white" style="letter-spacing: 1px;">document.getElementById(id).style.property = new style<br>
+<br>
+    ------example-----------                <br>
+    document.body.style.color="red";              <br>  
+    document.body.style.fontSize="14px"; 
+
+</p>
+
+
+<p class="text-aqua">After running this code in Javascript, JS will replace current stylesheet with new properties in DOM. We can check new properties in Browser's Inspect.</p>
+</div>
+
+
+<p class="alert alert-danger text-danger">If !important is used in CSS code, than style property cannot overwrite current css.</p>
+
+
+
+<section class="sub">
+    <h2>getComputedStyle</h2>
+<p>JavaScript getComputedStyle method is used to get style of html elements in JavaScript String. getComputedStyle is a window method with parameter HTMLElement. See how to get css in javascript.</p>
+ 
+<pre class="code" style="line-height: 1.5;">
+    getComputedStyle(document.body).fontSize;    // return "14px"
+    getComputedStyle(document.body).display;    // return "block"
+    
+    getComputedStyle(document.head).display;    // return "none"
+</pre>
+
+
+<div class="alert alert-info">
+    <p class="text-success">If an HTML Element is having both class and id, and both class and id are used in css code, getComputedStyle will return value of id as id is more specific than class.</p>
+</div>
+</section>
+
+<section >
+    <h2>example</h2>
+    <pre class="code" style="line-height: 1.5;">
+&lt;button class="toggle"&gt;Hide Text&lt;/button&gt; 
+&lt;span class="exp"&gt;This is example text&lt;/span&gt; 
+
+&lt;script&gt;            
+document.querySelector(".toggle").onclick=function(){
+    var x=document.querySelector(".exp");
+    var y=getComputedStyle(x).display;
+    
+    if(y=="none"){
+        x.style.display="inline";
+    }
+    else{
+        x.style.display="none";
+    }   
+};
+&lt;/script&gt;
+    </pre>
+</section>
+
+
+
+
+
+
+
+
+    </div>
+  <div class="right2" ng-include="'/./english/right2.html'">
+  </div>
+  <div class="clear"></div>
+</div>
+  <footer>
+  <div ng-include="'../../footer.html'"></div>
+  
+  </footer>
+   </div>
+ 
+   <div class="clear"></div>
+ </div>
+
+
+</body>
+<!--footer-->
+
+
+
+</html>
